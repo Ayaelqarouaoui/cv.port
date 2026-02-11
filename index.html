@@ -1,111 +1,84 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aya | Marketing Digital & Commercial</title>
+    <title>CHALHER Paris | Maison de Luxe</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root {
-            --primary-color: #2d3436; /* Gris pro */
-            --accent-color: #0984e3;  /* Bleu marketing */
-            --bg-color: #f4f7f6;
-            --text-color: #636e72;
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-
-        body { background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
-
-        /* Header & Hero Section */
-        header {
-            background: linear-gradient(135deg, #2d3436 0%, #000000 100%);
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 4px solid var(--accent-color);
-            margin-bottom: 20px;
-            object-fit: cover;
-        }
-
-        header h1 { font-size: 2.5rem; letter-spacing: 2px; text-transform: uppercase; }
-        header p { font-size: 1.2rem; color: #dfe6e9; margin-top: 10px; }
-
-        /* Container & Sections */
-        .container { max-width: 900px; margin: -50px auto 50px; background: white; padding: 40px; border-radius: 8px; shadow: 0 10px 30px rgba(0,0,0,0.1); box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-
-        section { margin-bottom: 40px; }
-        h2 { color: var(--primary-color); border-bottom: 2px solid var(--accent-color); display: inline-block; margin-bottom: 20px; padding-bottom: 5px; }
-
-        /* Skills Grid */
-        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
-        .skill-item { background: #f9f9f9; padding: 15px; border-radius: 5px; border-left: 4px solid var(--accent-color); }
-
-        /* Experience & Education */
-        .item { margin-bottom: 20px; }
-        .item h3 { color: var(--accent-color); font-size: 1.1rem; }
-        .date { font-style: italic; font-size: 0.9rem; color: #b2bec3; }
-
-        /* Contact & Footer */
-        .contact-links { text-align: center; margin-top: 30px; }
-        .contact-links a { text-decoration: none; color: var(--primary-color); margin: 0 15px; font-size: 1.5rem; transition: 0.3s; }
-        .contact-links a:hover { color: var(--accent-color); }
-        
-        footer { text-align: center; padding: 20px; font-size: 0.9rem; }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <img src="https://via.placeholder.com/150" alt="Aya" class="profile-img">
-    <h1>Aya</h1>
-    <p>Étudiante en Marketing Digital & Commercial</p>
-</header>
+    <header>
+        <div class="header-container">
+            <div class="menu-burger"><i class="fas fa-bars"></i></div>
+            <div class="logo">CHALHER <span>PARIS</span></div>
+            <div class="header-icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-user"></i>
+                <i class="fas fa-shopping-bag"></i>
+            </div>
+        </div>
+    </header>
 
-<div class="container">
-    <section id="about">
-        <h2>À propos</h2>
-        <p>Passionnée par l'évolution du commerce à l'ère du numérique, je développe des compétences en stratégie de contenu, analyse de données et gestion de la relation client. Mon objectif est de combiner créativité marketing et efficacité commerciale.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Compétences</h2>
-        <div class="skills-grid">
-            <div class="skill-item"><strong>SEO / SEM</strong><br>Optimisation & Ads</div>
-            <div class="skill-item"><strong>Social Media</strong><br>Gestion de communauté</div>
-            <div class="skill-item"><strong>Vente & Négociation</strong><br>Prospection commerciale</div>
-            <div class="skill-item"><strong>Analyse</strong><br>Google Analytics & KPI</div>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>CHALHER PARIS</h1>
+            <p>COLLECTION RAMADAN-AÏD 2026</p>
+            <a href="#collection" class="btn-discover">VOIR LA COLLECTION</a>
         </div>
     </section>
 
-    <section id="education">
-        <h2>Formation</h2>
-        <div class="item">
-            <h3>Master / Licence en Marketing Digital</h3>
-            <p>Nom de ton école ou université</p>
-            <span class="date">2023 - Présent</span>
-        </div>
+    <section class="reassurance">
+        <div class="re-item"><i class="fas fa-truck"></i> LIVRAISON OFFERTE</div>
+        <div class="re-item"><i class="fas fa-sync"></i> SATISFAIT OU REMBOURSÉ</div>
+        <div class="re-item"><i class="fas fa-lock"></i> PAIEMENT SÉCURISÉ</div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-links">
-            <a href="mailto:ton-email@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-            <a href="https://linkedin.com/in/ton-profil" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="#" title="Télécharger CV"><i class="fas fa-file-pdf"></i></a>
-        </div>
+    <section id="collection" class="gallery-section">
+        <div class="grid-container" id="gallery"></div>
     </section>
-</div>
 
-<footer>
-    &copy; 2024 Aya - Créé avec passion.
-</footer>
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="product-page-flex">
+                <div class="product-view">
+                    <img id="modalImage" src="" alt="">
+                </div>
+                <div class="product-info">
+                    <nav class="breadcrumb">CHALHER SHOP / NOUVEAUTÉS</nav>
+                    <h2 id="modalTitle">MODÈLE CHALHER</h2>
+                    <div class="stock-tag">! Derniers articles en stock</div>
+                    <p class="product-price">54,95 € <span class="ttc">TTC</span></p>
+                    
+                    <div class="personalisation-box">
+                        <h4>Personnalisation</h4>
+                        <p>N'oubliez pas de sauvegarder votre personnalisation pour pouvoir l'ajouter au panier</p>
+                        <label>Indiquez le message à y inscrire :</label>
+                        <textarea placeholder="Votre message ici..."></textarea>
+                        <span class="optional">optionnel</span>
+                    </div>
+                    
+                    <button class="add-to-cart">AJOUTER AU PANIER</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <footer>
+        <div class="footer-links">
+            <div class="f-col"><h4>INFORMATIONS</h4><p>Contactez-nous</p><p>Livraison</p></div>
+            <div class="f-col"><h4>NOS LIENS</h4><p>Blog</p><p>Ramadan 2026</p></div>
+            <div class="f-col"><h4>MON COMPTE</h4><p>Mes commandes</p></div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 CHALHER Paris. Luxe et Élégance.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
